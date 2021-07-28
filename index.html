@@ -24,34 +24,41 @@
     <nav class="nav">
       <div class="nav-left">
         <a href="#"><img src="/images/logo.svg" width="80" alt="logo" title="logo de la página"></a>
-        <ul>
-          <li class="dropdown"><a href="#">Product</a>
-            <ul class="dropdown-items">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Marketplace</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Integrations</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="dropdown" href="#">Company</a>
-            <ul class="dropdown-items">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="dropdown" href="#">Connect</a>
-            <ul class="dropdown-items">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Newsletter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="menu-dropdown menu-dropdown--show">
+          <ul>
+            <li class="dropdown">
+              <a class="dropdown-title" href="#">Product  <i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown-items dropdown-items--show">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-title" href="#">Company  <i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown-items dropdown-items--show">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-title" href="#">Connect  <i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown-items dropdown-items--show">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="menu-login-sign-up">
+            <li><a href="#">Login</a></li>
+            <li><a class="btn-sign-up" href="#">Sign up</a></li>
+          </ul>
+        </div>
       </div>
       <div class="nav-right">
         <a class="login" href="#">Login</a>
@@ -71,7 +78,7 @@
     <section>
       <h3 class="section-h3">Designed for the future</h3>
       <div class="container-flex u-wrapper">
-        <img class="img-editor" src="./images/illustration-editor-mobile.svg" alt="editor mobile" width="330">
+        <img class="img-section" src="./images/illustration-editor-mobile.svg" alt="editor mobile" width="330">
         <div class="content-info">
           <h4 class="section-h4">Introducing an extensible editor</h4>
           <p class="section-p">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -84,45 +91,68 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="container-flex bg-dark">
+        <img class="img-section" src="./images/illustration-phones.svg" alt="mobiles" title="mobiles with brand name" width="330">
+        <div class="content-info u-wrapper">
+          <h3 class="section-h2 section-h2--white">State of the Art Infrastructure</h3>
+          <p class="section-p section-p--white">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-flex u-wrapper">
+        <img class="img-section" src="./images/illustration-laptop-mobile.svg" alt="laptop" width="330">
+        <div class="content-info">
+          <h4 class="section-h4">Free, open, simple</h4>
+          <p class="section-p">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          <h4 class="section-h4">Powerful tooling</h4>
+          <p class="section-p">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-flex">
+        <img src="./images/logo.svg" alt="logo" title="logo">
+        <div class="product-info">
+          <h6 class="footer-h6">Product</h6>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="company-info">
+          <h6 class="footer-h6">Company</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="connect-info">
+          <h6 class="footer-h6">Connect</h6>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
   </main>
-  
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
