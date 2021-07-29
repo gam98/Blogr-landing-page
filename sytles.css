@@ -320,7 +320,7 @@ footer {
         display: none;
     }
     .header {
-        background-image: url(/images/bg-pattern-intro.svg), linear-gradient(var(--very-light-red), var(--light-red));
+        background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(var(--very-light-red), var(--light-red));
         background-repeat: no-repeat;
         background-size: 1500px, auto;
         padding: 4rem 1.5rem 6rem;
