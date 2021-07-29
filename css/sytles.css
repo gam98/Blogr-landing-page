@@ -73,6 +73,7 @@ ul {
     right: 0;
     left: 0;
     display: block;
+    transform: translateX(0);
     position: absolute;
     background-color: var(--white);
     width: 80vw;
@@ -254,4 +255,142 @@ footer {
 }
 .footer-flex ul li a:hover {
     text-decoration: underline;
+}
+@media screen and (min-width: 1024px){
+    body {
+        overflow-x: hidden;
+    }
+    .menu-icon {
+        display: none;
+    }
+    .nav-right {
+        display: flex;
+        gap: 1.5rem;
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight: 700;
+        align-items: center;
+        margin-top: -2.5rem;
+    }
+    .login {
+        display: block;
+        color: var(--white);
+    }
+     .sign-up {
+        display: block;
+        padding: .7rem 2rem;
+        border-radius: 1.2rem;
+        background-color: var(--white);
+        color: var(--light-red);
+    }
+    .nav {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-left {
+        display: flex;
+    }
+    .menu-dropdown {
+        display: flex;
+    }
+    .menu-dropdown > ul {
+        display: flex;
+        gap: 1rem;
+    }
+    .dropdown-title, .dropdown-title i {
+        color: var(--white);
+    }    
+    .dropdown {
+        position: relative;
+    }
+    .dropdown-items {
+        position: absolute;        
+        padding-left: 0;
+    }
+    .dropdown-items--show {
+        background-color: var(--white);
+        opacity: 1;
+        width: 100px;
+        padding-left: 1rem;
+    }
+    .dropdown-items--show a:hover {
+        opacity: 1;
+    }
+    .menu-dropdown .menu-login-sign-up {
+        display: none;
+    }
+    .header {
+        background-image: url(/images/bg-pattern-intro.svg), linear-gradient(var(--very-light-red), var(--light-red));
+        background-repeat: no-repeat;
+        background-size: 1500px, auto;
+        padding: 4rem 1.5rem 6rem;
+        border-bottom-left-radius: 100px;
+        background-position: right -24vw top -85vh, top;
+        margin-bottom: 3rem;
+    }
+    .u-wrapper {
+        width: 80%;
+    }
+    .container-flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .content-info {
+        width: 80vw;
+    }
+    .img-section {
+        width: 80vw;
+        transform: translateX(40%);
+    }
+    .section-h4, .section-p {
+        text-align: left;
+    }
+    section:nth-child(2) .container-flex, section:nth-child(3) .container-flex {
+        flex-direction: row;
+        align-items: center;
+    }
+    section:nth-child(2) .container-flex .img-section {
+        width: 40vw;
+        transform: translateX(20%);
+    }
+    .section-h2--white {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    section:nth-child(2) .container-flex .content-info {
+        width: 40vw;
+    }
+    .bg-dark {
+        margin-bottom: 4rem;
+    }
+    .bg-dark::after {
+        top: 4rem;
+        height: 370px;
+        background-size: 1200px, auto;
+        background-position: left -18rem top -44rem,top;
+    }
+    section:nth-child(3) .container-flex .img-section {
+        width: 170vw;
+        transform: translateX(-50%);
+    }
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer-flex img {
+        align-self: flex-start;
+        margin-top: 2rem;
+    }
+    .btn.btn--fill:hover, .sign-up:hover {
+        color: var(--white);
+        background: var(--very-light-red);
+        border: none;
+    }
+    .btn.btn--empty:hover {
+        color: var(--very-light-red);
+        border: none;
+        background: var(--white);
+    }
 }
